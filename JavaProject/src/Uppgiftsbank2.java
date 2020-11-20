@@ -1,6 +1,3 @@
-import java.math.RoundingMode;
-import java.util.Scanner;
-import javax.swing.JOptionPane;
 
 /**
  * Uppgifter från andra uppgiftsbanken
@@ -39,7 +36,7 @@ public class Uppgiftsbank2
    public static void uppgift2()
    {
       final int maxWeight = 100;
-      double pi = Math.PI;
+      //double pi = Math.PI;
       
       System.out.println("Maximum weight for the envelope is: " + maxWeight + " g");
    }
@@ -48,12 +45,12 @@ public class Uppgiftsbank2
    public static void uppgift3()
    {
       int intLimit = 1234567890;
-      long longLimit = 1032419804;
+      //long longLimit = 1032419804;
       short shortLimit = 12343;
-      float floatLimit = 1;
-      double doubleLimit = 1.1234567890123456789012345678901234567890123456789;
+      //float floatLimit = 1;
+      //double doubleLimit = 1.1234567890123456789012345678901234567890123456789;
       byte byteLimit = 127;
-      char character = '\u2030';
+      //char character = '\u2030';
       
       System.out.println("Int has a maximum of " + String.valueOf(intLimit).length() + " digits. "
             + "\nLong seem to have the same limit as int, can't get it to work. "

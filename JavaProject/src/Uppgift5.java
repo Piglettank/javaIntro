@@ -32,7 +32,8 @@ public class Uppgift5
       double coneVolume = 0.0;
       
       //Gets input from user
-      int[] inputArray = intInput();
+      int[] inputArray;
+      inputArray = intInput();
       
       //Calculates and prints base area, mantle area and volume of a cone for each pair of inputs provided
       for(int i = 0; inputArray.length > i+1; i += 2)
@@ -155,7 +156,8 @@ public class Uppgift5
       //redundant
       if(b > a)
       {
-         int temp = b;
+         int temp; 
+         temp = b;
          b = a;
          a = temp;
       }
@@ -225,7 +227,9 @@ public class Uppgift5
     */
    public static double area(int radius)
    {
-      double baseArea = Math.PI * (Math.pow(radius, 2));
+      double baseArea;
+      
+      baseArea = Math.PI * (Math.pow(radius, 2));
       
       return baseArea;
    }
@@ -239,8 +243,11 @@ public class Uppgift5
     */
    public static double area(int radius, int height)
    {
-      double s = pythagoras(radius, height);
-      double area = Math.PI * radius * s;
+      double s;
+      double area;
+      
+      s = pythagoras(radius, height);
+      area = Math.PI * radius * s;
       
       return area;
    }
@@ -280,7 +287,11 @@ public class Uppgift5
     */
    public static double volume(int height, double baseArea)
    {  
-      return (height * baseArea) / 3;
+      double volume;
+      
+      volume = (height * baseArea) / 3;
+      
+      return volume;
    }
   
 }
